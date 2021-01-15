@@ -7,7 +7,7 @@
 body {
   background-color: #1b1b1b;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 100vw;
   overflow-x: hidden;
 }
@@ -23,7 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin: 50px auto;
+  margin: 15px auto;
 }
 
 header p {
@@ -68,7 +68,7 @@ h2 {
 }
 
 h2:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -99,7 +99,7 @@ a {
 }
 
 a:after {
-  content: '';
+  content: "";
   background: linear-gradient(90deg, transparent, #38ccae);
   left: 0;
   bottom: 0;
@@ -124,7 +124,7 @@ p {
 
 .row {
   display: flex;
-  margin-top: 90px;
+  margin-top: 80px;
   align-items: flex-start;
   position: relative;
 }
@@ -140,7 +140,7 @@ p {
 }
 
 .row section p {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .row__col {
@@ -161,18 +161,26 @@ p {
 
 .person__img--filip {
   margin-top: 150px;
-  background-image: url('assets/filip.png');
+  background-image: url("assets/filip.png");
   background-position: -10px -50px;
 }
 
 .person__img--kacper {
-  background-image: url('assets/kacper.png');
+  background-image: url("assets/kacper.png");
   background-position: -30px -10px;
 }
 
 /*positioning*/
 
 /* RWD */
+
+#mobile-headline {
+  display: none;
+}
+
+#authors {
+  display: none;
+}
 
 @media (max-width: 812px) {
   header {
@@ -190,14 +198,26 @@ p {
   }
 
   .header__logo {
-    margin-bottom: 50px;
-    order: 2;
+    display: none;
+  }
+
+  header p {
+    padding: 0 25px;
+    display: none;
+  }
+
+  #mobile-headline {
+    display: block;
+  }
+
+  #authors {
+    display: block;
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 32px;
     order: 1;
-    padding-left: 0;
+    padding: 0 20px;
   }
 
   h2 {
@@ -222,8 +242,17 @@ p {
     font-size: 16px;
   }
 
+  .row section {
+    order: 1;
+  }
+
+  .row section {
+    padding-left: 0;
+  }
+
   .row__col {
     width: 100%;
+    order: 2;
   }
 }
 
