@@ -2,14 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
-  background-color: #1b1b1b;
+  background: linear-gradient(
+    to right top, #1b1b1b, #38ccae
+  );
   color: #fff;
   font-family: "Montserrat", sans-serif;
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-x: hidden;
+}
+
+.container {
+  height: auto;
+  width: 70%;
+  max-width: 1200px;
+  border-radius: 30px;
+  padding: 32px 64px 128px;
+  position: relative;
+  z-index: 2;
+  background: 
+    linear-gradient(to left bottom,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.75));
+  backdrop-filter: blur(8px);
 }
 
 header,
@@ -23,7 +45,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin: 15px auto;
+  margin: 0 auto;
 }
 
 header p {
@@ -84,7 +106,6 @@ h3 {
 }
 
 main {
-  padding: 0 25px;
 }
 
 section {
@@ -258,12 +279,15 @@ p {
 
 #subscribe-button {
   color: white;
+  display: inline-block;
   font-weight: 900;
   font-size: 32px;
-  width: 100%;
+  padding: 32px 64px;
   background-color: #38ccae;
-  padding: 20px 0;
   text-align: center;
+    background: linear-gradient(
+    to right top, #38ccae, rgba(255, 255, 255, 0.6) 
+  );
 }
 
 #subscribe-button:hover {

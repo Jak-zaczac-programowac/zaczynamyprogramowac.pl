@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bg.css" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -8,134 +9,92 @@
     />
     <link rel="icon" type="image/png" href="favicon.png" />
     <title>Zaczynamy Programować - Newsletter</title>
-
-    <!-- MailerLite Universal -->
-    <script>
-      (function (m, a, i, l, e, r) {
-        m["MailerLiteObject"] = e;
-        function f() {
-          var c = { a: arguments, q: [] };
-          var r = this.push(c);
-          return "number" != typeof r ? r : f.bind(c.q);
-        }
-        f.q = f.q || [];
-        m[e] = m[e] || f.bind(f.q);
-        m[e].q = m[e].q || f.q;
-        r = a.createElement(i);
-        var _ = a.getElementsByTagName(i)[0];
-        r.async = 1;
-        r.src = l + "?v" + ~~(new Date().getTime() / 1000000);
-        _.parentNode.insertBefore(r, _);
-      })(
-        window,
-        document,
-        "script",
-        "https://static.mailerlite.com/js/universal.js",
-        "ml"
-      );
-
-      var ml_account = ml("accounts", "2784502", "s0u8e7z7p0", "load");
-    </script>
-    <!-- End MailerLite Universal -->
   </head>
   <body>
-    <header>
-      <div class="header__logotype">
-        <div class="header__logo">
-          <img class="header__logo__bg" src="assets/logo-kreski.png" alt="" />
-          <img
-            class="header__logo__question-mark"
-            src="assets/logo-pytajnik.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <h1>Zaczynamy Programować!</h1>
-          <p>
-            Całoroczny plan nauki dla stawiających pierwsze kroki w
-            programowaniu<br />
-            od twórców kanału YouTube
-            <a href="https://www.youtube.com/channel/UCF4jzVCa2J45NXnNtf6XBoA"
-              >Jak zacząć programować?</a
-            >
-          </p>
-
-          <p id="mobile-headline">
-            Całoroczny plan nauki dla stawiających pierwsze kroki w
-            programowaniu od twórców kanału YouTube
-            <a href="https://www.youtube.com/channel/UCF4jzVCa2J45NXnNtf6XBoA"
-              >Jak zacząć programować?</a
-            >
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="row">
-          <div class="row__col" id="authors">
-            <h2>Autorzy</h2>
+    <div class="bg">
+      <img class="dot-1" src="./assets/kropki-male.png" alt="">
+      <img class="button" src="./assets/klawisz.png" alt="">
+      <img
+      class="q"
+      src="assets/logo-pytajnik.png"
+      alt=""
+    />
+      <!-- <img class="dot-2" src="./assets/kropki-male.png" alt=""> -->
+    </div>
+    <div class="container">
+      <header>
+        <div class="header__logotype">
+          <div class="header__logo">
+            <img class="header__logo__bg" src="assets/logo-kreski.png" alt="" />
+            <img
+              class="header__logo__question-mark"
+              src="assets/logo-pytajnik.png"
+              alt=""
+            />
           </div>
-          <div class="row__col">
-            <div class="person__img person__img--kacper"></div>
-            <h3>Kacper Sokołowski</h3>
-          </div>
-
-          <div class="row__col">
-            <div class="person__img person__img--filip"></div>
-            <h3>Filip Mamcarczyk</h3>
-          </div>
-
-          <section>
-            <p>Chcesz <b>postawić pierwsze kroki w programowaniu?</b></p>
+          <div>
+            <h1>Zaczynamy Programować!</h1>
             <p>
-              Umiesz już trochę, ale
-              <b>ogrom wiedzy do przyswojenia Cię przytłacza?</b>
+              Całoroczny plan nauki dla stawiających pierwsze kroki w
+              programowaniu<br />
+              od twórców kanału YouTube
+              <a href="https://www.youtube.com/channel/UCF4jzVCa2J45NXnNtf6XBoA"
+                >Jak zacząć programować?</a
+              >
             </p>
 
-            <p>Czujesz <b>zagubienie?</b></p>
-
-            <p>
-              Zapisz się na Newsletter, a <b>co dwa tygodnie</b> będziemy się
-              dzielić z Tobą naszą wiedzą i doświadczeniem. Dorzucimy do tego
-              ciekawe <b>artykuły, linki i pomysły na projekty</b>
+            <p id="mobile-headline">
+              Całoroczny plan nauki dla stawiających pierwsze kroki w
+              programowaniu od twórców kanału YouTube
+              <a href="https://www.youtube.com/channel/UCF4jzVCa2J45NXnNtf6XBoA"
+                >Jak zacząć programować?</a
+              >
             </p>
-
-            <p>Pokażemy Ci czego warto się uczyć!</p>
-            <a
-              id="subscribe-button"
-              href="javascript:;"
-              onclick="ml_webform_3354292('show')"
-              >Zapisuję się!</a
-            >
-          </section>
+          </div>
         </div>
-      </section>
-    </main>
+      </header>
+      <main>
+        <section>
+          <div class="row">
+            <div class="row__col" id="authors">
+              <h2>Autorzy</h2>
+            </div>
+            <div class="row__col">
+              <div class="person__img person__img--kacper"></div>
+              <h3>Kacper Sokołowski</h3>
+            </div>
 
-    <script>
-      var ml_webform_3354292 = ml_account(
-        "webforms",
-        "3354292",
-        "x9b8v3",
-        "load"
-      );
-      ml_webform_3354292("animation", "fadeIn");
-    </script>
+            <div class="row__col">
+              <div class="person__img person__img--filip"></div>
+              <h3>Filip Mamcarczyk</h3>
+            </div>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-33ZYPK6H87"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+            <section>
+              <p>Chcesz <b>postawić pierwsze kroki w programowaniu?</b></p>
+              <p>
+                Umiesz już trochę, ale
+                <b>ogrom wiedzy do przyswojenia Cię przytłacza?</b>
+              </p>
 
-      gtag("config", "G-33ZYPK6H87");
-    </script> -->
+              <p>Czujesz <b>zagubienie?</b></p>
+
+              <p>
+                Zapisz się na Newsletter, a <b>co dwa tygodnie</b> będziemy się
+                dzielić z Tobą naszą wiedzą i doświadczeniem. Dorzucimy do tego
+                ciekawe <b>artykuły, linki i pomysły na projekty</b>
+              </p>
+
+              <p>Pokażemy Ci czego warto się uczyć!</p>
+              <a
+                id="subscribe-button"
+                href="javascript:;"
+                onclick="ml_webform_3354292('show')"
+                >Zapisuję się!</a
+              >
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

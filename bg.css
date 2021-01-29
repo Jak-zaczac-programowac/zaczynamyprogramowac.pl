@@ -1,0 +1,49 @@
+.bg img {
+    position: absolute;
+    z-index: 1;
+    animation: rotate infinite linear;
+}
+
+img.dot-1 {
+    height: 60vh;
+    left: 55%;
+    top: 0;
+    animation-duration: 28s;
+}
+
+img.dot-2 {
+    right: 60%;
+    bottom: 0;
+    animation-name: rotate-counter-clockwise;
+    animation-duration: 18s;
+}
+
+.button {
+    right: 57%;
+    top: 0;
+    animation: move 12s infinite linear !important;
+}
+
+.q {
+    width: 50%;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.15;
+
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
+@keyframes rotate-counter-clockwise {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-360deg)}
+}
+
+@keyframes move {
+    from {transform: translate3d(0, -30vh, 0)}
+    to {transform: translate3d(0, 105vh, 0)}
+}
