@@ -26,6 +26,8 @@ body {
   flex-wrap: wrap;
   padding: 32px 92px;
   border-radius: 20px;
+  max-height: 95vh;
+  overflow: auto;
   background: linear-gradient(to left bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
   backdrop-filter: blur(8px);
   color: #fff;
@@ -243,8 +245,6 @@ main {
     display: block;
     padding: 20px 10px;
     background: none;
-    max-height: 95vh;
-    overflow: auto;
   }
 
   header {
