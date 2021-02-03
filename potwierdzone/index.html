@@ -10,58 +10,55 @@
     <title>Zaczynamy Programować - Newsletter</title>
   </head>
   <body>
-    <header>
-      <div class="header__logotype">
-        <div class="header__logo">
-          <img
-            class="header__logo__bg"
-            src="../assets/logo-kreski.png"
-            alt=""
-          />
-          <img
-            class="header__logo__question-mark"
-            src="../assets/logo-pytajnik.png"
-            alt=""
-          />
+    <body>
+      <div class="background">
+        <img src="../img/button.png" alt="" class="background__img background__img--button">
+        <img src="../img/dots.png"  alt="" class="background__img background__img--dots">
+        
+        <img src="../img/logo-question-mark.png" alt="" class="background__img background__img--logo">
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="../img/logo-bg.png" alt="" class="logo__bg">
+            <img src="../img/logo-question-mark.png" alt="" class="logo__question-mark">
         </div>
-        <div>
-          <h1>Zaczynamy Programować!</h1>
-          <p>
-            Cotygodniowa dawka wiedzy dla stawiających pierwsze kroki w
-            programowaniu<br />
-            od twórców kanału YouTube
-            <a href="https://www.youtube.com/channel/UCF4jzVCa2J45NXnNtf6XBoA"
-              >Jak zacząć programować?</a
-            >
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section>
-        <div class="row">
-          <div class="row__col">
-            <div class="person__img person__img--kacper"></div>
-            <h3>Kacper Sokołowski</h3>
-          </div>
-
-          <div class="row__col">
-            <div class="person__img person__img--filip"></div>
-            <h3>Filip Mamcarczyk</h3>
-          </div>
-
-          <section>
-            <h2>To wszystko!</h2>
-            <p>
-              Jeszcze raz dziękujemy za zaufanie. Teraz zostaje Ci już tylko
-              czekanie na wiadomości od nas.
+        <header>
+            <h1>Zaczynamy programować!</h1>
+            <p>Całoroczny plan nauki dla stawiających pierwsze kroki w programowaniu od twórców kanału YouTube 
+                <a class="header__link" href="https://jakzaczacprogramowac.pl">
+                    Jak zacząć programować?
+                </a>
             </p>
-          </section>
-        </div>
-      </section>
-    </main>
+        </header>
+        <main>
+            <section class="section--people">
+                <h2 id="authors">Autorzy</h2>
+                <ul class="people">
+                    <li class="person">
+                        <div class="person__img-container">
+                            <img src="../img/kacper.png" alt="" class="person__img">
+                        </div>
+                        <span class="person__name">Kacper Sokołowski</span>
+                    </li>
+                    <li class="person">
+                        <div class="person__img-container">
+                            <img src="../img/filip.png" alt="" class="person__img person__img--filip">
+                        </div>
+                        <span class="person__name">Filip Mamcarczyk</span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <p><b>To wszystko!</b></p>
+                <p>
+                  Jeszcze raz dziękujemy za zaufanie. Teraz zostaje Ci już tylko
+              czekanie na wiadomości od nas ;)!
+                </p>
+            </section>
+        </main>
+    </div>  
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-33ZYPK6H87"
     ></script>
@@ -73,6 +70,6 @@
       gtag('js', new Date());
 
       gtag('config', 'G-33ZYPK6H87');
-    </script>
+    </script> -->
   </body>
 </html>
