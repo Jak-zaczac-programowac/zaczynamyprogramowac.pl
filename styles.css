@@ -128,9 +128,9 @@ main {
   color: #fff;
   font-size: 42px;
   font-weight: 700;
-  background-color: var(--green);
   text-align: center;
-    background: linear-gradient(
+  background-color: var(--green);
+  background: linear-gradient(
     to right top, var(--green), rgba(255, 255, 255, 0.6) 
   );
   border: none;
@@ -243,6 +243,8 @@ main {
     display: block;
     padding: 20px 10px;
     background: none;
+    max-height: 100vh;
+    overflow: auto;
   }
 
   header {
