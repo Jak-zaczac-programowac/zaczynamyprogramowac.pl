@@ -243,7 +243,7 @@ main {
     display: block;
     padding: 20px 10px;
     background: none;
-    max-height: 100vh;
+    max-height: 95vh;
     overflow: auto;
   }
 
