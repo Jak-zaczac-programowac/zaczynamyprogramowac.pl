@@ -104,18 +104,18 @@ header {
 }
 
 .logo__bg {
-  width: 150px;
-  top: 125px;
+  width: 100px;
+  top: 80px;
   position: absolute;
 }
 
 .logo__question-mark {
-  width: 150px;
+  width: 100px;
   position: relative;
 }
 
 h1 {
-  padding: 20px 0 42px;
+  padding: 20px 0 5px;
   font-size: 48px;
   color: #fff;
 }
@@ -299,7 +299,6 @@ main {
 
   h1 {
     font-size: 32px;
-    padding: 0 20px;
   }
 
   .logo {
