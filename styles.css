@@ -186,8 +186,7 @@ main {
 }
 
 .person:last-child {
-  margin-left: 20px;
-  align-self: flex-end;
+  margin: 100px 0 0 20px;
 }
 
 .person__img-container {
