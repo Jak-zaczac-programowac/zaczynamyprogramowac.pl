@@ -58,9 +58,8 @@ body {
 }   
 
 .background__img--dots {
-  left: 50%;
-  top: 0;
-  height: 75vh;
+  left: 60%;
+  top: 10%;
   animation: rotate 25s linear infinite;
 }
 
